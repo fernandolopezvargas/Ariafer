@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ariafer — Portfolio UX/UI & IA</title>
+<meta name="description" content="Portfolio de Ariafer, Diseñador UX/UI y especialista en contenido visual con IA en Cochabamba, Bolivia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-saas"></div>
+
+<header id="navbar">
+  <nav class="wrap">
+    <div class="nav-row">
+      <div class="logo">Ariafer<span class="dot">.</span>dev</div>
+      <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+    </div>
+    <div class="navlinks" id="navlinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="mailto:hola@ariafer.dev">Contacto</a>
+      <button class="nav-cta" id="theme-toggle" aria-label="Cambiar entre tema claro y oscuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </button>
+    </div>
+
+    <div class="mobile-glass-card" id="mobileMenu">
+      <div class="mobile-glass-card-inner">
+        <div class="mobile-menu-row">
+        <span class="mobile-menu-title">Navegación</span>
+        <button class="nav-cta" id="theme-toggle-mobile" aria-label="Cambiar entre tema claro y oscuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#inicio" class="mobile-nav-link">Inicio</a>
+        <a href="#experiencia" class="mobile-nav-link">Experiencia</a>
+        <a href="#proyectos" class="mobile-nav-link">Proyectos</a>
+        <a href="#sobre-mi" class="mobile-nav-link">Sobre mí</a>
+        <a href="mailto:hola@ariafer.dev" class="mobile-nav-link">Contacto</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-title">Redes Sociales</span>
+        <div class="mobile-social">
+          <a href="https://github.com/tuusuario" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.24h4V23h-4V8.24zM8.34 8.24h3.83v2.02h.05c.53-1 1.84-2.06 3.78-2.06 4.04 0 4.78 2.66 4.78 6.12V23h-4v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.55V23h-4V8.24z"/></svg>
+          </a>
+          <a href="https://instagram.com/tuusuario" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/tuusuario" target="_blank" rel="noopener" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section id="inicio" class="hero" style="border-top:none;">
+    <div class="hero-inner">
+      <div class="hero-text reveal active">
+        <div class="hero-glow"></div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Disponible para proyectos
+        </div>
+        <h1 class="name">
+          <span class="line muted">Hey, soy</span>
+          <span class="line name-big">Ariafer</span>
+        </h1>
+        <p class="role gradient-text">Diseño + IA</p>
+        <p class="desc">Convierto prompts en interfaces de alta fidelidad y contenido visual. Más de 3 años de experiencia en diseño UX/UI y creación visual con IA.</p>
+        <p class="location">📍 Cochabamba, Bolivia</p>
+        <div class="cta-row">
+          <a class="btn btn-white" href="mailto:hola@ariafer.dev"><i class="fas fa-envelope"></i> Escríbeme</a>
+          <a class="btn btn-outline" href="https://github.com/tuusuario" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="console reveal">
+        <div class="console-bar">
+          <span class="console-dot red"></span><span class="console-dot yellow"></span><span class="console-dot green"></span>
+          <span class="console-title">generador-visual.ai</span>
+        </div>
+        <div class="console-body">
+          <div class="prompt-box" tabindex="0">
+            <span class="prompt-sym">&gt;</span><span id="typed"></span><span class="caret"></span>
+          </div>
+        </div>
+        <div class="render-frame">
+          <img src="img/perfil.png" alt="Foto de Ariafer">
+          <div class="scan"></div>
+          <div class="render-tag"><span class="dot2"></span>render_final.png</div>
+        </div>
+        <div class="prompt-foot">
+          <span id="lastIdea"></span>
+          <span class="prompt-hint"><span class="key">tab</span> cambiar prompt <span class="sep">·</span> <span class="key">⏎</span> nueva idea</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee-section">
+    <div class="marquee-label">
+      <span>Primary Stack</span>
+      <span class="label-count">11 tools</span>
+    </div>
+    <div class="marquee">
+      <div class="marquee-track">
+
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">VS Code</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/react" alt=""></div><div class="tool-text"><div class="tool-name">React</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/figma" alt=""></div><div class="tool-text"><div class="tool-name">Figma</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Affinity_Designer_V2_icon.svg" alt=""></div><div class="tool-text"><div class="tool-name">Affinity</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">Illustrator</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">Photoshop</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/davinciresolve" alt=""></div><div class="tool-text"><div class="tool-name">DaVinci</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://www.svgrepo.com/show/504203/capcut.svg" alt=""></div><div class="tool-text"><div class="tool-name">CapCut</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/tailwindcss" alt=""></div><div class="tool-text"><div class="tool-name">Tailwind CSS</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/sass" alt=""></div><div class="tool-text"><div class="tool-name">Sass</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/blender" alt=""></div><div class="tool-text"><div class="tool-name">Blender</div></div></article>
+
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">VS Code</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/react" alt=""></div><div class="tool-text"><div class="tool-name">React</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/figma" alt=""></div><div class="tool-text"><div class="tool-name">Figma</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Affinity_Designer_V2_icon.svg" alt=""></div><div class="tool-text"><div class="tool-name">Affinity</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">Illustrator</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt=""></div><div class="tool-text"><div class="tool-name">Photoshop</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/davinciresolve" alt=""></div><div class="tool-text"><div class="tool-name">DaVinci</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://www.svgrepo.com/show/504203/capcut.svg" alt=""></div><div class="tool-text"><div class="tool-name">CapCut</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/tailwindcss" alt=""></div><div class="tool-text"><div class="tool-name">Tailwind CSS</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/sass" alt=""></div><div class="tool-text"><div class="tool-name">Sass</div></div></article>
+        <article class="tool-card"><div class="tool-icon"><img src="https://cdn.simpleicons.org/blender" alt=""></div><div class="tool-text"><div class="tool-name">Blender</div></div></article>
+
+      </div>
+    </div>
+  </section>
+
+<div class="gallery-root">
+    <div class="gallery-header">
+        <h1>GALERÍA CREATIVA</h1>
+        <p>Una colección de proyectos donde la inteligencia artificial impulsa la creatividad, mientras la dirección de arte, la composición y el diseño convierten cada concepto en una pieza visual única.</p>
+    </div>
+
+    <div class="stage-container" id="stage">
+        <div class="card-stack" id="cardStack">
+
+            <!-- Card 1 -->
+            <div class="art-card active" data-index="0">
+                <img src="img/post1.png" alt="3D Art">
+                <div class="card-number">01</div>
+                <div class="card-info">
+                    <span class="card-tag">Agnes</span>
+                    <h3>3D Art</h3>
+                    <p>Modelado tridimensional con iluminación estudiada y acabado digital de alto impacto visual.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="art-card next" data-index="1">
+                <img src="img/post2.png" alt="Monster">
+                <div class="card-number">02</div>
+                <div class="card-info">
+                    <span class="card-tag" style="background:rgba(196,30,58,0.15);border-color:rgba(196,30,58,0.25);">Energy</span>
+                    <h3>Monster</h3>
+                    <p>Composición oscura con detalles agresivos y un estilo visual que rompe lo convencional.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="art-card hidden" data-index="2">
+                <img src="img/post3.png" alt="Porsche">
+                <div class="card-number">03</div>
+                <div class="card-info">
+                    <span class="card-tag" style="background:rgba(90,143,106,0.15);border-color:rgba(90,143,106,0.25);">Coche</span>
+                    <h3>Porsche</h3>
+                    <p>Arte automotriz con render fotorrealista y estética cinematográfica.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="art-card hidden" data-index="3">
+                <img src="img/post14.png" alt="Tigre Blanco">
+                <div class="card-number">04</div>
+                <div class="card-info">
+                    <span class="card-tag" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.15);">Animal</span>
+                    <h3>Tigre Blanco</h3>
+                    <p>Ilustración experimental combinando textura de plumas con la elegancia del tigre blanco.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="nav-controls">
+        <button class="nav-arrow" id="btnPrev" aria-label="Anterior">&#10094;</button>
+        <div class="progress-track">
+            <div class="progress-fill" id="progressFill" style="width:25%"></div>
+        </div>
+        <button class="nav-arrow" id="btnNext" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+</div>
+
+  <section id="experiencia">
+    <div class="section-head reveal"><span class="index">01</span><h2>Experiencia</h2><span class="rule"></span></div>
+    <div class="timeline">
+
+      <div class="job-row reveal">
+        <div class="job-year">2026<span class="to">— hoy</span></div>
+        <div class="job-content">
+          <div class="job-top">
+            <div>
+              <h3>UX/UI Designer + AI</h3>
+              <div class="company">Freelance · Actualidad</div>
+            </div>
+            <span class="status">activo</span>
+          </div>
+          <p class="desc">Diseño experiencias digitales centradas en el usuario para aplicaciones, sitios web y productos digitales. Integro herramientas de inteligencia artificial para crear artes visuales, explorar conceptos creativos y optimizar flujos de trabajo.</p>
+          <div class="extra-content">
+            <ul class="job-highlights">
+              <li><span class="mark"></span><span>Desarrollé interfaces web y móviles priorizando usabilidad, accesibilidad y coherencia visual.</span></li>
+              <li><span class="mark"></span><span>Creé wireframes, prototipos y sistemas de diseño en Figma.</span></li>
+              <li><span class="mark"></span><span>Integré IA generativa al proceso creativo, reduciendo los tiempos de producción visual en <strong>~70%</strong>.</span></li>
+            </ul>
+            <div class="job-tags"><span class="tag" style="color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,0.08)">UX/UI</span><span class="tag" style="color:#8b5cf6;border-color:#8b5cf6;background:rgba(139,92,246,0.08)">Figma</span><span class="tag" style="color:#3b82f6;border-color:#3b82f6;background:rgba(59,130,246,0.08)">AI Design</span><span class="tag" style="color:#10b981;border-color:#10b981;background:rgba(16,185,129,0.08)">Photoshop</span><span class="tag" style="color:#ec4899;border-color:#ec4899;background:rgba(236,72,153,0.08)">Affinity</span><span class="tag" style="color:#06b6d4;border-color:#06b6d4;background:rgba(6,182,212,0.08)">ChatGPT</span></div>
+          </div>
+          <button class="toggle-btn"><span class="more-text">Ver más</span><span class="less-text">Ver menos</span><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        </div>
+      </div>
+
+      <div class="job-row reveal">
+        <div class="job-year">2025<span class="to">— 2023</span></div>
+        <div class="job-content">
+          <div class="job-top">
+            <div>
+              <h3>WabiSabi</h3>
+              <div class="company">Graphic Designer</div>
+            </div>
+          </div>
+          <p class="desc">Fui responsable del desarrollo visual de la marca, diseñando piezas gráficas y produciendo contenido audiovisual para redes sociales y campañas digitales. Combiné diseño, fotografía y edición de video para mantener una comunicación visual coherente y atractiva en todos los canales.</p>
+          <div class="extra-content">
+            <ul class="job-highlights">
+              <li><span class="mark"></span><span>Diseñé la identidad visual de la marca y piezas gráficas para campañas, redes sociales y material promocional.</span></li>
+              <li><span class="mark"></span><span>Planifiqué, grabé y edité videos de productos para contenido orgánico y publicitario.</span></li>
+              <li><span class="mark"></span><span>Desarrollé recursos gráficos alineados con los lineamientos de la marca, garantizando consistencia visual en cada pieza.</span></li>
+              <li><span class="mark"></span><span>Colaboré en la creación de contenido estratégico para fortalecer la presencia digital de la marca.</span></li>
+            </ul>
+            <div class="job-tags"><span class="tag" style="color:#ec4899;border-color:#ec4899;background:rgba(236,72,153,0.08)">Branding</span><span class="tag" style="color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,0.08)">Social Media Design</span><span class="tag" style="color:#f97316;border-color:#f97316;background:rgba(249,115,22,0.08)">Illustrator</span><span class="tag" style="color:#3b82f6;border-color:#3b82f6;background:rgba(59,130,246,0.08)">Photoshop</span><span class="tag" style="color:#8b5cf6;border-color:#8b5cf6;background:rgba(139,92,246,0.08)">Figma</span><span class="tag" style="color:#10b981;border-color:#10b981;background:rgba(16,185,129,0.08)">DaVinci Resolve</span><span class="tag" style="color:#06b6d4;border-color:#06b6d4;background:rgba(6,182,212,0.08)">CapCut</span></div>
+          </div>
+          <button class="toggle-btn"><span class="more-text">Ver más</span><span class="less-text">Ver menos</span><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        </div>
+      </div>
+
+      <div class="job-row reveal">
+        <div class="job-year">2017<span class="to">— 2022</span></div>
+        <div class="job-content">
+          <div class="job-top">
+            <div>
+              <h3>Lic. en Diseño Gráfico y Comunicación Visual</h3>
+              <div class="company">Universidad Mayor de San Simón · Cochabamba</div>
+            </div>
+            <span class="status" style="color:var(--accent-blue);border-color:var(--accent-blue-glow);background:rgba(59,130,246,0.08)">formación</span>
+          </div>
+          <p class="desc">Donde empezó todo: cinco años formando las bases de tipografía, color, composición y teoría de la comunicación visual que hoy sostienen mi forma de diseñar interfaces y contenido con IA.</p>
+          <div class="extra-content">
+            <ul class="job-highlights">
+              <li><span class="mark"></span><span>Proyecto de grado enfocado en <strong>Colores para Daltónicos</strong> desarrollo una website que permita informar y guiar en el tema de percepción del color
+                  a diseñadores y desarrolladores de website, mejorando así la experiencia en personas daltónicas dentro de la interfaz gráfica.</span></li>
+              <li><span class="mark"></span><span>Base teórica en semiótica y comunicación que hoy aplico al diseño de producto.</span></li>
+            </ul>
+            <div class="job-tags"><span class="tag" style="color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,0.08)">Tipografía</span><span class="tag" style="color:#8b5cf6;border-color:#8b5cf6;background:rgba(139,92,246,0.08)">Semiótica</span><span class="tag" style="color:#ec4899;border-color:#ec4899;background:rgba(236,72,153,0.08)">Branding</span><span class="tag" style="color:#3b82f6;border-color:#3b82f6;background:rgba(59,130,246,0.08)">Color</span><span class="tag" style="color:#10b981;border-color:#10b981;background:rgba(16,185,129,0.08)">Fotografía</span><span class="tag" style="color:#f97316;border-color:#f97316;background:rgba(249,115,22,0.08)">UI/UX</span><span class="tag" style="color:#06b6d4;border-color:#06b6d4;background:rgba(6,182,212,0.08)">Marketing</span></div>
+          </div>
+          <button class="toggle-btn"><span class="more-text">Ver más</span><span class="less-text">Ver menos</span><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="section-head reveal"><h2>Proyectos seleccionados</h2><span class="rule"></span></div>
+    <div class="grid">
+      <div class="card reveal">
+        <div class="card-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="card-body">
+          <h3>Rediseño App Financiera</h3>
+          <p>Optimización de UX para una aplicación fintech, mejorando la retención mediante visualización de datos asistida por IA.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">Midjourney</span></div>
+          <div class="links">
+            <a href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg>Código</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <div class="card-body">
+          <h3>Campaña Visual con IA</h3>
+          <p>Generación de contenido visual para redes sociales utilizando modelos de difusión y edición avanzada.</p>
+          <div class="tags"><span class="tag">Stable Diffusion</span><span class="tag">Photoshop</span></div>
+          <div class="links">
+            <a href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg>Código</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="card-body">
+          <h3>Sistema de Diseño Web</h3>
+          <p>Creación de design system escalable para una startup, integrando componentes en React y documentación viva.</p>
+          <div class="tags"><span class="tag">Figma</span><span class="tag">Design System</span></div>
+          <div class="links">
+            <a href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg>Código</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+        <div class="card-body">
+          <h3>Branding & Identidad</h3>
+          <p>Desarrollo de identidad visual para marca local en Cochabamba, desde el logotipo hasta su aplicación digital.</p>
+          <div class="tags"><span class="tag">Illustrator</span><span class="tag">Branding</span></div>
+          <div class="links">
+            <a href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg>Código</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="section-head reveal"><h2>Sobre mí</h2><span class="rule"></span></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="pull">Diseño <em>interfaces</em> con la misma lógica con la que escribo <em>prompts</em>: claridad primero, estética después.</p>
+        <p class="body-text">Soy <strong>Ariafer</strong>, desde Cochabamba, Bolivia. Me apasiona fusionar el diseño centrado en el usuario con las nuevas tecnologías de inteligencia artificial para crear piezas visuales que destacan.</p>
+        <p class="body-text">Mi enfoque está en el <strong>diseño de impacto</strong>: crear experiencias que no solo se vean bien, sino que comuniquen el mensaje correcto de forma eficiente e innovadora.</p>
+      </div>
+      <div class="reveal stat-strip">
+        <div class="stat-box">
+          <div class="stat">+3</div>
+          <div class="stat-label">años de<br>experiencia</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat">IA</div>
+          <div class="stat-label">diseño de<br>impacto visual</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat">BO</div>
+          <div class="stat-label">basado en<br>Cochabamba</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© <span id="current-year"></span> Ariafer. Todos los derechos reservados.</span>
+  <div class="social">
+    <a href="mailto:hola@ariafer.dev" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l8 6 8-6M4 4h16v16H4V4z"/></svg></a>
+    <a href="https://github.com/tuusuario" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5Z"/></svg></a>
+    <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S.02 4.88.02 3.5 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.24h4V23h-4V8.24zM8.34 8.24h3.83v2.02h.05c.53-1 1.84-2.06 3.78-2.06 4.04 0 4.78 2.66 4.78 6.12V23h-4v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.55V23h-4V8.24z"/></svg></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
