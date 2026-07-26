@@ -481,7 +481,6 @@
     color: var(--text);
     overflow: hidden;
     word-break: break-word;
-    min-height: 67px;
   }
   .prompt-box::before{
     content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 3px;
