@@ -441,7 +441,8 @@
 
   @media (max-width: 640px){
     .btn{ padding: 11px 18px; font-size: 0.8125rem; }
-    .cta-row{ flex-direction: column; align-items: center; }
+    .cta-row{ flex-direction: column; align-items: stretch; }
+    .cta-row .btn{ width: 100%; text-align: center; justify-content: center; }
   }
 
   .console{
